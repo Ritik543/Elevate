@@ -72,11 +72,11 @@ const sessionoptions = {
   },
 };
 
-// app.get('/', (req,res)=>{
+app.get('/', (req,res)=>{
 
-//     res.send("Welcome");
+    res.redirect("/login");
 
-// });
+});
 
 app.use(session(sessionoptions));
 app.use(flash());
